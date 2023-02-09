@@ -11,7 +11,7 @@ app = Flask(__name__)
 def homepage():
     current_epoch = time()
     random_number = randint(0, 10000)
-
+    
     return render_template("homepage.html", number=random_number, time=current_epoch)
 
 
